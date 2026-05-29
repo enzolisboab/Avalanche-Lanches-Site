@@ -1,0 +1,18 @@
+{
+  "name": "Avalanche Lanches e Salgados",
+  "short_name": "Avalanche",
+  "description": "Delivery premium da Avalanche Lanches e Salgados.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/avalanche-food-campaign.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

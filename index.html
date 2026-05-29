@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+    <meta
+      name="description"
+      content="Avalanche Lanches e Salgados - plataforma premium de delivery em Iguape."
+    />
+    <title>Avalanche Lanches e Salgados</title>
+    <link rel="preload" href="assets/avalanche-food-campaign.png" as="image" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cinema-bars" aria-hidden="true"></div>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader-smoke"></div>
+      <div class="loader-brand">
+        <span class="brand-mark">AVALANCHE</span>
+        <span class="brand-sub">Lanches e Salgados</span>
+      </div>
+      <p>Preparando sua avalanche...</p>
+      <div class="loader-line"><span></span></div>
+    </div>
+
+    <header class="topbar">
+      <a class="mini-brand" href="#hero" aria-label="Avalanche início">
+        <span>AV</span>
+        <strong>Avalanche</strong>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+      </nav>
+      <button class="cart-trigger magnetic" id="openCart" type="button">
+        <span class="icon">+</span>
+        <span>Pedido</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="particle-field" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="hero-food" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-logo">
+            <span class="brand-mark brand-mark-large">AVALANCHE</span>
+            <span class="brand-sub">Lanches e Salgados</span>
+          </div>
+          <p class="kicker">delivery urbano • Iguape</p>
+          <h1>AVALANCHE LANCHES E SALGADOS</h1>
+          <p class="hero-copy">Peça seu lanche sem complicação.</p>
+          <div class="hero-actions">
+            <a class="primary-cta magnetic" href="#cardapio">PEDIR AGORA</a>
+          </div>
+        </div>
+        <div class="hero-ticker" aria-hidden="true">
+          <span>SMASH</span><span>DOGÃO</span><span>SALGADOS</span><span>PIX</span>
+          <span>COMBOS</span><span>DELIVERY</span><span>IGUAPE</span>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cardapio">
+        <div class="section-head">
+          <p class="kicker">cardápio interativo</p>
+          <h2>A linha de ataque da Avalanche</h2>
+          <button class="mobile-filter-btn" id="categoryOpen" type="button">Categorias</button>
+        </div>
+
+        <div class="category-rail" id="categoryRail" aria-label="Categorias do cardápio"></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrinho lateral" aria-hidden="true">
+      <div class="cart-shell">
+        <div class="cart-head">
+          <div>
+            <p class="kicker">seu pedido</p>
+            <h2>Avalanche no carrinho</h2>
+          </div>
+          <button class="close-btn" id="closeCart" type="button" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <label class="field">
+          <span>Observações do pedido</span>
+          <textarea id="orderNotes" rows="3" placeholder="Ex: sem cebola, caprichar no molho"></textarea>
+        </label>
+        <div class="coupon-row">
+          <input id="couponInput" type="text" placeholder="Cupom" autocomplete="off" />
+          <button id="applyCoupon" type="button">Aplicar</button>
+        </div>
+        <div class="totals" id="cartTotals"></div>
+        <button class="finish-btn magnetic" id="finishOrder" type="button">FINALIZAR</button>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+      <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+        <button class="close-btn" id="closeCheckout" type="button" aria-label="Fechar checkout">×</button>
+        <p class="kicker">pagamento seguro</p>
+        <h2 id="checkoutTitle">Finalizar pedido</h2>
+        <div class="checkout-grid">
+          <label class="field">
+            <span>Nome</span>
+            <input id="customerName" type="text" autocomplete="name" placeholder="Seu nome" />
+          </label>
+          <label class="field">
+            <span>WhatsApp</span>
+            <input id="customerPhone" type="tel" autocomplete="tel" placeholder="(13) 99999-9999" />
+          </label>
+          <label class="field wide">
+            <span>Endereço</span>
+            <input id="customerAddress" type="text" placeholder="Rua, número, bairro" />
+          </label>
+        </div>
+        <div class="payment-options" id="paymentOptions">
+          <button class="active" type="button" data-payment="Mercado Pago">Mercado Pago</button>
+          <button type="button" data-payment="Pix">Pix</button>
+          <button type="button" data-payment="Cartão">Cartão</button>
+          <button type="button" data-payment="Google Pay">Google Pay</button>
+          <button type="button" data-payment="Apple Pay">Apple Pay</button>
+        </div>
+        <div class="gateway-card">
+          <span id="gatewayLight"></span>
+          <p id="gatewayStatus">Gateway aguardando confirmação.</p>
+        </div>
+        <button class="pay-btn magnetic" id="payOrder" type="button">PAGAR E ENVIAR</button>
+      </section>
+    </div>
+
+    <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+    <div class="burst-layer" id="burstLayer" aria-hidden="true"></div>
+    <div class="thermal-receipt" id="thermalReceipt" aria-hidden="true"></div>
+
+    <nav class="bottom-nav" aria-label="Navegação mobile">
+      <a href="#hero">Início</a>
+      <a href="#cardapio">Menu</a>
+      <button type="button" id="mobileCart">Pedido</button>
+    </nav>
+
+    <script src="app.js?v=5" defer></script>
+  </body>
+</html>

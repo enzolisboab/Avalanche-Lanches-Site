@@ -1,0 +1,10 @@
+{
+  "name": "avalanche-lanches-premium",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma web premium para Avalanche Lanches e Salgados.",
+  "scripts": {
+    "start": "python -m http.server 4173",
+    "serve": "python -m http.server 4173"
+  }
+}
