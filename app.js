@@ -1,123 +1,235 @@
-const categories = ["Todos", "Hambúrgueres", "Dogões", "Combos", "Salgados", "Bebidas"];
+const categories = ["Todos", "Hambúrgueres", "Dogões", "Batatas", "Combos"];
 
 const productVisuals = {
-  burger: { className: "visual-burger", pos: "46% 56%", zoom: "140%", fallbackZoom: "140%" },
-  dog: { className: "visual-dog", pos: "38% 60%", zoom: "155%", fallbackZoom: "155%" },
-  combo: { className: "visual-combo", pos: "64% 56%", zoom: "150%", fallbackZoom: "150%" },
-  salgado: { className: "visual-salgado", pos: "52% 76%", zoom: "170%", fallbackZoom: "170%" },
-  drink: { className: "visual-drink", pos: "50% 50%", zoom: "86%", fallbackZoom: "165%" },
+  burger: { className: "visual-burger", pos: "50% 50%", zoom: "135%", fallbackZoom: "135%" },
+  dog: { className: "visual-dog", pos: "50% 50%", zoom: "145%", fallbackZoom: "145%" },
+  combo: { className: "visual-combo", pos: "50% 50%", zoom: "145%", fallbackZoom: "145%" },
+  fries: { className: "visual-fries", pos: "50% 50%", zoom: "140%", fallbackZoom: "140%" },
 };
 
 const products = [
+  // HAMBÚRGUERES
+
   {
-    id: "smash-duplo",
+    id: "x-burguer",
     category: "Hambúrgueres",
-    name: "Avalanche Smash Duplo",
-    description: "Dois smashs, cheddar derretido, bacon crocante e molho da casa.",
-    price: 32.9,
-    badge: "mais pedido",
+    name: "X-Burguer",
+    description: "Pão, hambúrguer, queijo, presunto e maionese.",
+    price: 10,
+    badge: "clássico",
     visual: "burger",
-    image: "/images/avalanche/smash-duplo.jpg",
+    image: "/images/avalanche/x-burguer.jpg",
   },
+
   {
-    id: "furacao-bacon",
+    id: "x-salada",
     category: "Hambúrgueres",
-    name: "Furacão Bacon",
-    description: "Blend alto, pão tostado, cebola na chapa e uma pancada de bacon.",
-    price: 36.9,
-    badge: "brutal",
+    name: "X-Salada",
+    description: "Pão, hambúrguer, alface, tomate, queijo, presunto e maionese.",
+    price: 12,
+    badge: "popular",
     visual: "burger",
-    image: "/images/avalanche/furacao-bacon.jpg",
+    image: "/images/avalanche/x-salada.jpg",
   },
+
   {
-    id: "prensado-da-casa",
+    id: "x-frango",
     category: "Hambúrgueres",
-    name: "Prensado da Casa",
-    description: "Lanche prensado brasileiro, queijo puxando e molho cremoso.",
-    price: 27.9,
-    badge: "raiz",
+    name: "X-Frango",
+    description: "Pão, hambúrguer, frango desfiado, alface, tomate, queijo, presunto e maionese.",
+    price: 18,
+    badge: "frango",
     visual: "burger",
-    image: "/images/avalanche/prensado-da-casa.jpg",
+    image: "/images/avalanche/x-frango.jpg",
   },
+
   {
-    id: "dogao-avalanche",
-    category: "Dogões",
-    name: "Dogão Avalanche",
-    description: "Salsicha, purê, milho, vinagrete, batata palha e três molhos.",
-    price: 24.9,
+    id: "x-bacon",
+    category: "Hambúrgueres",
+    name: "X-Bacon",
+    description: "Pão, hambúrguer, alface, tomate, bacon, queijo, presunto e maionese.",
+    price: 18,
+    badge: "bacon",
+    visual: "burger",
+    image: "/images/avalanche/x-bacon.jpg",
+  },
+
+  {
+    id: "x-calabresa",
+    category: "Hambúrgueres",
+    name: "X-Calabresa",
+    description: "Pão, hambúrguer, alface, tomate, calabresa, queijo, presunto e maionese.",
+    price: 18,
+    badge: "calabresa",
+    visual: "burger",
+    image: "/images/avalanche/x-calabresa.jpg",
+  },
+
+  {
+    id: "x-tudo",
+    category: "Hambúrgueres",
+    name: "X-Tudo",
+    description:
+      "Hambúrguer, queijo, presunto, bacon, ovo, salsicha, calabresa, cheddar, catupiry, alface, tomate e batata palha.",
+    price: 35,
     badge: "gigante",
-    visual: "dog",
-    image: "/images/avalanche/dogao-avalanche.jpg",
+    visual: "burger",
+    image: "/images/avalanche/x-tudo.jpg",
   },
+
+  // DOGÕES
+
   {
-    id: "dogao-catupiry",
+    id: "hot-dog",
     category: "Dogões",
-    name: "Dogão Catupiry",
-    description: "Dogão exagerado com catupiry, cheddar, bacon e batata palha.",
-    price: 28.9,
-    badge: "cremoso",
+    name: "Hot Dog",
+    description:
+      "Pão, maionese, purê, salsicha, batata palha, molho da calabresa e vinagrete.",
+    price: 13,
+    badge: "tradicional",
     visual: "dog",
-    image: "/images/avalanche/dogao-catupiry.jpg",
+    image: "/images/avalanche/hot-dog.jpg",
   },
+
   {
-    id: "combo-ataque",
+    id: "dogao",
+    category: "Dogões",
+    name: "Dogão",
+    description:
+      "Pão, maionese, purê, duas salsichas, batata palha, molho da calabresa e vinagrete.",
+    price: 16,
+    badge: "mais vendido",
+    visual: "dog",
+    image: "/images/avalanche/dogao.jpg",
+  },
+
+  {
+    id: "dog-bacon",
+    category: "Dogões",
+    name: "Dog Bacon",
+    description:
+      "Pão, maionese, purê, salsicha, bacon, batata palha, molho da calabresa e vinagrete.",
+    price: 18,
+    badge: "bacon",
+    visual: "dog",
+    image: "/images/avalanche/dog-bacon.jpg",
+  },
+
+  {
+    id: "dog-calabresa",
+    category: "Dogões",
+    name: "Dog Calabresa",
+    description:
+      "Pão, maionese, purê, salsicha, calabresa, batata palha, molho da calabresa e vinagrete.",
+    price: 18,
+    badge: "calabresa",
+    visual: "dog",
+    image: "/images/avalanche/dog-calabresa.jpg",
+  },
+
+  {
+    id: "dog-frango",
+    category: "Dogões",
+    name: "Dog Frango",
+    description:
+      "Pão, maionese, purê, salsicha, frango, catupiry, batata palha, molho da calabresa e vinagrete.",
+    price: 18,
+    badge: "frango",
+    visual: "dog",
+    image: "/images/avalanche/dog-frango.jpg",
+  },
+
+  {
+    id: "dog-especial",
+    category: "Dogões",
+    name: "Dog Especial",
+    description:
+      "Pão, maionese, purê, salsicha, bacon, calabresa, cheddar, catupiry, batata palha, molho da calabresa e vinagrete.",
+    price: 25,
+    badge: "especial",
+    visual: "dog",
+    image: "/images/avalanche/dog-especial.jpg",
+  },
+
+  // BATATAS
+
+  {
+    id: "batata-p",
+    category: "Batatas",
+    name: "Batata Simples P",
+    description: "Porção pequena de batata frita.",
+    price: 10,
+    badge: "pequena",
+    visual: "fries",
+    image: "/images/avalanche/batata-p.jpg",
+  },
+
+  {
+    id: "batata-m",
+    category: "Batatas",
+    name: "Batata Simples M",
+    description: "Porção média de batata frita.",
+    price: 15,
+    badge: "média",
+    visual: "fries",
+    image: "/images/avalanche/batata-m.jpg",
+  },
+
+  {
+    id: "batata-g",
+    category: "Batatas",
+    name: "Batata Simples G",
+    description: "Porção grande de batata frita.",
+    price: 20,
+    badge: "grande",
+    visual: "fries",
+    image: "/images/avalanche/batata-g.jpg",
+  },
+
+  {
+    id: "batata-cheddar-bacon-p",
+    category: "Batatas",
+    name: "Batata Cheddar e Bacon P",
+    description: "Batata frita coberta com cheddar e bacon.",
+    price: 20,
+    badge: "cheddar",
+    visual: "fries",
+    image: "/images/avalanche/batata-cheddar-bacon-p.jpg",
+  },
+
+  {
+    id: "batata-cheddar-bacon-m",
+    category: "Batatas",
+    name: "Batata Cheddar e Bacon M",
+    description: "Batata frita coberta com cheddar e bacon.",
+    price: 25,
+    badge: "cheddar",
+    visual: "fries",
+    image: "/images/avalanche/batata-cheddar-bacon-m.jpg",
+  },
+
+  {
+    id: "batata-cheddar-bacon-g",
+    category: "Batatas",
+    name: "Batata Cheddar e Bacon G",
+    description: "Batata frita coberta com cheddar e bacon.",
+    price: 30,
+    badge: "cheddar",
+    visual: "fries",
+    image: "/images/avalanche/batata-cheddar-bacon-g.jpg",
+  },
+
+  // COMBO
+
+  {
+    id: "combo-hotdog",
     category: "Combos",
-    name: "Combo Ataque Total",
-    description: "Smash duplo, fritas crocantes e guaraná caçulinha gelado.",
-    price: 44.9,
+    name: "Combo Hot Dog",
+    description: "Hot Dog + Batata Frita + Refrigerante.",
+    price: 25,
     badge: "combo",
     visual: "combo",
-    image: "/images/avalanche/combo-ataque-total.jpg",
-  },
-  {
-    id: "combo-dupla",
-    category: "Combos",
-    name: "Combo Dupla Nevasca",
-    description: "Dois lanches prensados, fritas grandes e refrigerante 1L.",
-    price: 74.9,
-    badge: "dupla",
-    visual: "combo",
-    image: "/images/avalanche/combo-dupla-nevasca.jpg",
-  },
-  {
-    id: "coxinha-cremosa",
-    category: "Salgados",
-    name: "Coxinha Cremosa",
-    description: "Massa dourada, recheio molhadinho e final crocante.",
-    price: 8.9,
-    badge: "dourada",
-    visual: "salgado",
-    image: "/images/avalanche/coxinha-cremosa.jpg",
-  },
-  {
-    id: "kit-salgados",
-    category: "Salgados",
-    name: "Kit Salgados Avalanche",
-    description: "Porção mista com coxinha, risole, bolinha de queijo e quibe.",
-    price: 34.9,
-    badge: "festa",
-    visual: "salgado",
-    image: "/images/avalanche/kit-salgados-avalanche.jpg",
-  },
-  {
-    id: "guarana-caculinha",
-    category: "Bebidas",
-    name: "Guaraná Caçulinha",
-    description: "Gelado no ponto para fechar o pedido sem dó.",
-    price: 6.9,
-    badge: "gelado",
-    visual: "drink",
-    image: "/images/avalanche/guarana-caculinha.jpg",
-  },
-  {
-    id: "refri-litro",
-    category: "Bebidas",
-    name: "Refrigerante 1L",
-    description: "Escolha o sabor no atendimento e manda junto com o combo.",
-    price: 12.9,
-    badge: "família",
-    visual: "drink",
-    image: "/images/avalanche/refrigerante-1l.jpg",
+    image: "/images/avalanche/combo-hotdog.jpg",
   },
 ];
 
