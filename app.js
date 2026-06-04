@@ -18,7 +18,7 @@ const products = [
     price: 10,
     badge: "clássico",
     visual: "burger",
-    image: "/images/avalanche/x-burguer.jpg",
+    image: "/images/avalanche/x-burguer.png",
   },
 
   {
@@ -29,7 +29,7 @@ const products = [
     price: 12,
     badge: "popular",
     visual: "burger",
-    image: "/images/avalanche/x-salada.jpg",
+    image: "images/avalanche/x-salada.png",
   },
 
   {
@@ -40,7 +40,7 @@ const products = [
     price: 18,
     badge: "frango",
     visual: "burger",
-    image: "/images/avalanche/x-frango.jpg",
+    image: "/images/avalanche/x-frango.png",
   },
 
   {
@@ -51,7 +51,7 @@ const products = [
     price: 18,
     badge: "bacon",
     visual: "burger",
-    image: "/images/avalanche/x-bacon.jpg",
+    image: "/images/avalanche/x-bacon.png",
   },
 
   {
@@ -62,7 +62,7 @@ const products = [
     price: 18,
     badge: "calabresa",
     visual: "burger",
-    image: "/images/avalanche/x-calabresa.jpg",
+    image: "/images/avalanche/x-calabresa.png",
   },
 
   {
@@ -74,7 +74,7 @@ const products = [
     price: 35,
     badge: "gigante",
     visual: "burger",
-    image: "/images/avalanche/x-tudo.jpg",
+    image: "/images/avalanche/x-tudo.png",
   },
 
   // DOGÕES
@@ -88,7 +88,7 @@ const products = [
     price: 13,
     badge: "tradicional",
     visual: "dog",
-    image: "/images/avalanche/hot-dog.jpg",
+    image: "/images/avalanche/hot-dog.png",
   },
 
   {
@@ -100,7 +100,7 @@ const products = [
     price: 16,
     badge: "mais vendido",
     visual: "dog",
-    image: "/images/avalanche/dogao.jpg",
+    image: "/images/avalanche/dogao.png",
   },
 
   {
@@ -112,7 +112,7 @@ const products = [
     price: 18,
     badge: "bacon",
     visual: "dog",
-    image: "/images/avalanche/dog-bacon.jpg",
+    image: "/images/avalanche/dog-bacon.png",
   },
 
   {
@@ -124,7 +124,7 @@ const products = [
     price: 18,
     badge: "calabresa",
     visual: "dog",
-    image: "/images/avalanche/dog-calabresa.jpg",
+    image: "/images/avalanche/dog-calabresa.png",
   },
 
   {
@@ -136,7 +136,7 @@ const products = [
     price: 18,
     badge: "frango",
     visual: "dog",
-    image: "/images/avalanche/dog-frango.jpg",
+    image: "/images/avalanche/dog-frango.png",
   },
 
   {
@@ -148,7 +148,7 @@ const products = [
     price: 25,
     badge: "especial",
     visual: "dog",
-    image: "/images/avalanche/dog-especial.jpg",
+    image: "/images/avalanche/dog-especial.png",
   },
 
   // BATATAS
@@ -161,7 +161,7 @@ const products = [
     price: 10,
     badge: "pequena",
     visual: "fries",
-    image: "/images/avalanche/batata-p.jpg",
+    image: "/images/avalanche/batata-p.png",
   },
 
   {
@@ -172,7 +172,7 @@ const products = [
     price: 15,
     badge: "média",
     visual: "fries",
-    image: "/images/avalanche/batata-m.jpg",
+    image: "/images/avalanche/batata-m.png",
   },
 
   {
@@ -183,7 +183,7 @@ const products = [
     price: 20,
     badge: "grande",
     visual: "fries",
-    image: "/images/avalanche/batata-g.jpg",
+    image: "/images/avalanche/batata-g.png",
   },
 
   {
@@ -194,7 +194,7 @@ const products = [
     price: 20,
     badge: "cheddar",
     visual: "fries",
-    image: "/images/avalanche/batata-cheddar-bacon-p.jpg",
+    image: "/images/avalanche/batata-cheddar-bacon-p.png",
   },
 
   {
@@ -205,7 +205,7 @@ const products = [
     price: 25,
     badge: "cheddar",
     visual: "fries",
-    image: "/images/avalanche/batata-cheddar-bacon-m.jpg",
+    image: "/images/avalanche/batata-cheddar-bacon-m.png",
   },
 
   {
@@ -216,7 +216,7 @@ const products = [
     price: 30,
     badge: "cheddar",
     visual: "fries",
-    image: "/images/avalanche/batata-cheddar-bacon-g.jpg",
+    image: "/images/avalanche/batata-cheddar-bacon-g.png",
   },
 
   // COMBO
@@ -229,7 +229,7 @@ const products = [
     price: 25,
     badge: "combo",
     visual: "combo",
-    image: "/images/avalanche/combo-hotdog.jpg",
+    image: "/images/avalanche/combo-hotdog.png",
   },
 ];
 
